@@ -63,9 +63,9 @@ public class Task2 {
      * Даны 3 символа. Определите является ли хотя бы один из них цифрой 1..9
      */
     boolean atLeastOneIsDigit(char c1, char c2, char c3) {
-        boolean isC1Digit = (int)c1 >= (int)'0' && (int)c1 <= (int)'9';
-        boolean isC2Digit = (int)c2 >= (int)'0' && (int)c2 <= (int)'9';
-        boolean isC3Digit = (int)c3 >= (int)'0' && (int)c3 <= (int)'9';
+        boolean isC1Digit = c1 >= '0' && c1 <= '9';
+        boolean isC2Digit = c2 >= '0' && c2 <= '9';
+        boolean isC3Digit = c3 >= '0' && c3 <= '9';
 
         return isC1Digit || isC2Digit || isC3Digit;
     }
